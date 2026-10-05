@@ -354,3 +354,19 @@ h3 {
   color: #17617b;
   font-weight: 700;
 }
+.contact-info {
+  margin: 28px 0;
+}
+
+.contact-info p {
+  margin: 12px 0;
+}
+
+.contact-info a {
+  color: inherit;
+  font-weight: 700;
+}
+
+.contact-info a:hover {
+  opacity: 0.8;
+}
