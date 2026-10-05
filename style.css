@@ -1,1 +1,258 @@
+:root {
+  --blue: #76c9e8;
+  --blue-dark: #17617b;
+  --orange: #f29a52;
+  --dark: #24333b;
+  --light: #f3fbfd;
+  --white: #ffffff;
+  --shadow: 0 10px 30px rgba(23, 97, 123, 0.12);
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--dark);
+  background: var(--white);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* Шапка */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--white);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.site-header .container {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  color: var(--blue-dark);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.main-nav a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  color: var(--orange);
+}
+
+/* Главный экран */
+
+.hero {
+  padding: 90px 0;
+  background: linear-gradient(135deg, #e9f9fd, #bde9f5);
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--blue-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  max-width: 720px;
+  margin: 0 0 24px;
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+}
+
+h2 {
+  margin: 0 0 24px;
+  color: var(--blue-dark);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.hero-description {
+  max-width: 620px;
+  margin-bottom: 32px;
+  font-size: 1.2rem;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo img {
+  width: min(300px, 80%);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+/* Кнопки */
+
+.button {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 999px;
+  color: var(--white);
+  background: var(--orange);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.button:hover {
+  background: #dc7e36;
+  transform: translateY(-2px);
+}
+
+.button-light {
+  color: var(--blue-dark);
+  background: var(--white);
+}
+
+.button-light:hover {
+  background: #eafaff;
+}
+
+/* Разделы */
+
+.section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background: var(--light);
+}
+
+.section-accent {
+  color: var(--white);
+  background: var(--blue-dark);
+}
+
+.section-accent h2,
+.section-accent .eyebrow {
+  color: var(--white);
+}
+
+/* Карточки услуг */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  padding: 26px;
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  color: var(--blue-dark);
+}
+
+/* Подвал */
+
+.site-footer {
+  padding: 24px 0;
+  color: var(--white);
+  background: #123f50;
+  text-align: center;
+}
+
+/* Мобильная версия */
+
+@media (max-width: 760px) {
+  .site-header .container {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  .main-nav {
+    gap: 10px 14px;
+  }
+
+  .main-nav a {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-logo {
+    order: -1;
+  }
+
+  .hero-logo img {
+    width: 190px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
