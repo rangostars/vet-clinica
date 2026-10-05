@@ -208,10 +208,36 @@ h3 {
 /* Подвал */
 
 .site-footer {
-  padding: 24px 0;
+  padding: 40px 0 24px;
   color: var(--white);
   background: #123f50;
   text-align: center;
+}
+
+.site-footer p {
+  margin: 8px 0;
+}
+
+.site-footer a {
+  display: inline-block;
+  margin: 8px 0 20px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.site-footer a:hover {
+  color: var(--orange);
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-copy {
+  margin-top: 24px !important;
+  color: #b9d7df;
+  font-size: 0.9rem;
 }
 
 /* Мобильная версия */
