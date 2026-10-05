@@ -333,3 +333,24 @@ h3 {
   color: #17617b;
   font-weight: 700;
 }
+.doctors-cards {
+  align-items: stretch;
+}
+
+.doctor-card {
+  overflow: hidden;
+}
+
+.doctor-photo {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.doctor-position {
+  color: #17617b;
+  font-weight: 700;
+}
