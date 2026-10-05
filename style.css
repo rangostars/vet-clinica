@@ -387,3 +387,20 @@ h3 {
   flex-shrink: 0;
   white-space: nowrap;
 }
+@media (max-width: 700px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .price-button {
+    margin-left: auto;
+  }
+}
