@@ -282,3 +282,25 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.contact-content h2 {
+  margin-bottom: 16px;
+}
+
+.contact-content p:not(.eyebrow) {
+  max-width: 650px;
+}
+
+@media (max-width: 760px) {
+  .contact-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
