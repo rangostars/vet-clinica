@@ -304,3 +304,11 @@ h3 {
     flex-direction: column;
   }
 }
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(23, 97, 123, 0.2);
+}
