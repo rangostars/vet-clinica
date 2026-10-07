@@ -971,3 +971,9 @@ h3 {
     font-size: 0.8rem;
   }
 }
+.price-card {
+  border: 2px solid #c8895d;
+  border-radius: 18px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
