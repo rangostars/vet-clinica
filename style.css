@@ -444,31 +444,6 @@ h3 {
 }
 .gallery {
   margin-top: 56px;
-  text-align: center;
-}
-
-.gallery h3 {
-  margin-bottom: 24px;
-}
-
-@media (max-width: 600px) {
-  .carousel {
-    gap: 8px;
-  }
-
-  .carousel-button {
-    width: 36px;
-    height: 36px;
-    flex-basis: 36px;
-    font-size: 18px;
-  }
-
-  .carousel-slide {
-    height: 260px;
-  }
-}
-.gallery {
-  margin-top: 56px;
   overflow: hidden;
 }
 
@@ -487,7 +462,7 @@ h3 {
 .photo-marquee-track {
   display: flex;
   width: max-content;
-  animation: photo-scroll 55s linear infinite;
+  animation: photo-scroll 45s linear infinite;
 }
 
 .photo-marquee-group {
