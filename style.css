@@ -1017,7 +1017,8 @@ h3 {
 .floating-appointment-button:hover {
   color: #ffffff;
   background: #1d54c5;
-  transform: scale(1.06);
+  animation-play-state: paused;
+  transform: scale(1.12);
 }
 
 .floating-appointment-button:focus-visible {
@@ -1064,6 +1065,20 @@ h3 {
     box-shadow:
       0 0 0 0 rgba(40, 100, 223, 0),
       0 8px 24px rgba(29, 73, 170, 0.35);
+  }
+}
+@media (max-width: 600px) {
+  .floating-appointment-button {
+    animation-duration: 1.8s;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .floating-appointment-button {
+    animation: none;
+  }
+
+  .floating-appointment-button:hover {
+    transform: none;
   }
 }
 
