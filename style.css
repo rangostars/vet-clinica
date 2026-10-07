@@ -562,8 +562,10 @@ h3 {
 .review-card {
   display: flex;
   flex-direction: column;
-  flex: 1 1 300px;
+  width: 100%;
+  min-width: 0;
   min-height: 620px;
+  box-sizing: border-box;
   padding: 24px;
   border-radius: 28px;
   background: #ffffff;
@@ -618,4 +620,18 @@ h3 {
 
 .reviews-button {
   margin-top: 20px;
+}
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  overflow: visible;
+  padding: 8px 0 20px;
+}
+
+.review-card {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
