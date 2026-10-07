@@ -1067,3 +1067,24 @@ h3 {
   box-sizing: border-box;
   background: #ffffff;
 }
+.main-nav a.active,
+.main-nav a.active:hover,
+.main-nav a.active:focus,
+.main-nav a.active:visited {
+  color: inherit !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+.main-nav a[href="prices.html"],
+.main-nav a[href="prices.html"]:hover,
+.main-nav a[href="prices.html"]:focus {
+  color: inherit !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
