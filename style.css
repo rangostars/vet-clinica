@@ -552,6 +552,7 @@ h3 {
 
 .reviews-list {
   display: flex;
+  align-items: stretch;
   gap: 16px;
   overflow-x: auto;
   padding: 8px 4px 20px;
@@ -559,8 +560,10 @@ h3 {
 }
 
 .review-card {
-  flex: 0 0 300px;
-  min-height: 245px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
+  min-height: 620px;
   padding: 24px;
   border-radius: 28px;
   background: #ffffff;
@@ -601,11 +604,13 @@ h3 {
 }
 
 .review-card p {
+  flex-grow: 1;
   line-height: 1.6;
   color: #59677c;
 }
 
 .review-link {
+  margin-top: auto;
   color: #2472ed;
   font-weight: 700;
   text-decoration: none;
