@@ -228,58 +228,33 @@
     </div>
     
      <div class="gallery">
-      <p class="eyebrow">Наша атмосфера</p>
+  <p class="eyebrow">Наша атмосфера</p>
 
-      <h3>Пёс&Пёс в фотографиях</h3>
+  <h3>Пёс&Пёс в фотографиях</h3>
 
-      <div class="carousel">
-        <button
-          class="carousel-button carousel-button-prev"
-          type="button"
-          aria-label="Предыдущая фотография"
-        >
-          ❮
-        </button>
-
-        <div class="carousel-window">
-          <div class="carousel-track">
-            <img
-              src="images/dog-1.jpg"
-              alt="Собака на занятии в центре Пёс&Пёс"
-              class="carousel-slide active"
-            >
-
-            <img
-              src="images/dog-2.jpg"
-              alt="Собака на тренировке"
-              class="carousel-slide"
-            >
-
-            <img
-              src="images/dog-3.jpg"
-              alt="Занятие с собакой"
-              class="carousel-slide"
-            >
-
-            <img
-              src="images/dog-4.jpg"
-              alt="Собака в центре Пёс&Пёс"
-              class="carousel-slide"
-            >
-          </div>
-        </div>
-
-        <button
-          class="carousel-button carousel-button-next"
-          type="button"
-          aria-label="Следующая фотография"
-        >
-          ❯
-        </button>
+  <div class="photo-marquee">
+    <div class="photo-marquee-track">
+      <div class="photo-marquee-group">
+        <img src="images/dog-1.jpg" alt="Собака в клинике">
+        <img src="images/dog-2.jpg" alt="Оборудование клиники">
+        <img src="images/dog-3.jpg" alt="Занятие с собакой">
+        <img src="images/dog-4.jpg" alt="Кабинет клиники">
+        <img src="images/dog-5.jpg" alt="Специалист работает с собакой">
+        <img src="images/dog-6.jpg" alt="Интерьер клиники">
       </div>
 
-      <div class="carousel-dots" aria-label="Выбор фотографии"></div>
+      <!-- Повтор нужен для плавного бесконечного движения -->
+      <div class="photo-marquee-group" aria-hidden="true">
+        <img src="images/dog-1.jpg" alt="">
+        <img src="images/dog-2.jpg" alt="">
+        <img src="images/dog-3.jpg" alt="">
+        <img src="images/dog-4.jpg" alt="">
+        <img src="images/dog-5.jpg" alt="">
+        <img src="images/dog-6.jpg" alt="">
+      </div>
     </div>
+  </div>
+</div>
 
 </section>
     
