@@ -451,75 +451,6 @@ h3 {
   margin-bottom: 24px;
 }
 
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.carousel-window {
-  width: min(720px, 100%);
-  overflow: hidden;
-  border-radius: 18px;
-}
-
-.carousel-track {
-  position: relative;
-}
-
-.carousel-slide {
-  display: none;
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 18px;
-}
-
-.carousel-slide.active {
-  display: block;
-}
-
-.carousel-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  flex: 0 0 44px;
-  border: none;
-  border-radius: 50%;
-  background: #8a5a3b;
-  color: #ffffff;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.carousel-button:hover {
-  background: #68432d;
-}
-
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 16px;
-}
-
-.carousel-dot {
-  width: 10px;
-  height: 10px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background: #d8c2b2;
-  cursor: pointer;
-}
-
-.carousel-dot.active {
-  background: #8a5a3b;
-}
-
 @media (max-width: 600px) {
   .carousel {
     gap: 8px;
@@ -534,5 +465,70 @@ h3 {
 
   .carousel-slide {
     height: 260px;
+  }
+}
+.gallery {
+  margin-top: 56px;
+  overflow: hidden;
+}
+
+.gallery h3,
+.gallery .eyebrow {
+  text-align: center;
+}
+
+.photo-marquee {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.photo-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: photo-scroll 55s linear infinite;
+}
+
+.photo-marquee-group {
+  display: flex;
+  gap: 14px;
+  padding-right: 14px;
+  flex-shrink: 0;
+}
+
+.photo-marquee img {
+  display: block;
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0 28px 28px 0;
+  flex-shrink: 0;
+}
+
+@keyframes photo-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-marquee img {
+    width: 150px;
+    height: 210px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .photo-marquee-group {
+    gap: 10px;
+    padding-right: 10px;
+  }
+
+  .photo-marquee-track {
+    animation-duration: 35s;
   }
 }
