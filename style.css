@@ -968,7 +968,7 @@ h3 {
   }
 }
 .price-card {
-  border: 2px solid #c8895d;
+  border: 2px solid #0b6d8f;
   border-radius: 18px;
   background: #ffffff;
   box-sizing: border-box;
@@ -1052,4 +1052,10 @@ h3 {
   .floating-button-icon {
     font-size: 1.1rem;
   }
+}
+.main-nav a.active {
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
 }
