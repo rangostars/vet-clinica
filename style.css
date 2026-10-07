@@ -977,3 +977,83 @@ h3 {
   background: #ffffff;
   box-sizing: border-box;
 }
+.floating-appointment-button {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+  width: 128px;
+  height: 128px;
+  padding: 14px;
+
+  border: 0;
+  border-radius: 50%;
+
+  color: #ffffff;
+  background: #2864df;
+  box-shadow:
+    0 0 0 8px rgba(40, 100, 223, 0.15),
+    0 8px 24px rgba(29, 73, 170, 0.35);
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  text-decoration: none;
+
+  animation: appointment-pulse 2s ease-in-out infinite;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.floating-appointment-button:hover {
+  color: #ffffff;
+  background: #1d54c5;
+  transform: scale(1.06);
+}
+
+.floating-appointment-button:focus-visible {
+  outline: 4px solid rgba(40, 100, 223, 0.35);
+  outline-offset: 5px;
+}
+
+.floating-button-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+@keyframes appointment-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 8px rgba(40, 100, 223, 0.15),
+      0 8px 24px rgba(29, 73, 170, 0.35);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 18px rgba(40, 100, 223, 0),
+      0 10px 30px rgba(29, 73, 170, 0.45);
+  }
+}
+@media (max-width: 600px) {
+  .floating-appointment-button {
+    right: 16px;
+    bottom: 18px;
+    width: 92px;
+    height: 92px;
+    font-size: 0.78rem;
+  }
+
+  .floating-button-icon {
+    font-size: 1.1rem;
+  }
+}
