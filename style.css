@@ -1151,3 +1151,41 @@ nav a[href="prices.html"]:focus {
   height: auto;
   object-fit: contain;
 }
+.prices-title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 45px;
+}
+
+.prices-title h1 {
+  margin: 0;
+}
+
+.prices-logo {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+.prices-grid {
+  width: min(100% - 40px, 1200px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.prices-grid .price-card {
+  border: 2px solid #8ed8e8 !important;
+  border-radius: 18px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .prices-grid {
+    width: calc(100% - 30px);
+    grid-template-columns: 1fr;
+  }
+}
