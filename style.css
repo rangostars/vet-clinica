@@ -1212,3 +1212,13 @@ nav a[href="prices.html"]:focus {
   border-radius: 18px;
   background: #ffffff;
 }
+.price-card,
+.price-card h2,
+.price-card h3,
+.price-card h4,
+.price-card p,
+.price-card span,
+.price-card strong,
+.price-card li {
+  color: #5b3524 !important;
+}
