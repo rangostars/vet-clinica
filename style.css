@@ -1148,8 +1148,8 @@ nav a[href="prices.html"]:focus {
 }
 
 .prices-logo {
-  width: 125px !important;
-  height: 125px !important;
+  width: 80px !important;
+  height: 80px !important;
   object-fit: contain;
   margin-left: 20px;
 }
@@ -1272,4 +1272,20 @@ nav a[href="prices.html"]:focus {
   margin: 0 !important;
   object-fit: contain;
   flex: 0 0 auto;
+}
+@media (max-width: 700px) {
+  .prices-title {
+    gap: 12px;
+    margin-top: 45px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .prices-title h1 {
+    font-size: 30px;
+  }
+
+  .prices-logo {
+    width: 60px !important;
+    height: 60px !important;
+  }
 }
