@@ -1130,3 +1130,8 @@ nav a[href="prices.html"]:focus {
   pointer-events: auto;
   cursor: pointer;
 }
+.prices-hero h1 {
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 700;
+}
