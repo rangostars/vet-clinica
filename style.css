@@ -1088,3 +1088,18 @@ h3 {
   box-shadow: none !important;
   padding: 0 !important;
 }
+a.price-button,
+a.price-button:hover,
+a.price-button:focus,
+a.price-button:active,
+a.price-button:visited {
+  display: inline;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
+  box-shadow: none;
+  font: inherit;
+  text-decoration: none;
+}
