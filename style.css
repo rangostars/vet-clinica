@@ -1135,3 +1135,19 @@ nav a[href="prices.html"]:focus {
   font-size: 42px;
   font-weight: 700;
 }
+.prices-title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 45px;
+}
+
+.prices-title h1 {
+  margin: 0;
+}
+
+.prices-logo {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
