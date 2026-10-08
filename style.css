@@ -1138,8 +1138,9 @@ nav a[href="prices.html"]:focus {
 .prices-title {
   display: flex;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 45px;
+  gap: 35px;
+  width: min(100% - 60px, 1100px);
+  margin-bottom: 60px;
 }
 
 .prices-title h1 {
@@ -1147,9 +1148,10 @@ nav a[href="prices.html"]:focus {
 }
 
 .prices-logo {
-  width: 90px;
-  height: auto;
+  width: 125px !important;
+  height: 125px !important;
   object-fit: contain;
+  margin-left: 20px;
 }
 .prices-title {
   display: flex;
@@ -1221,4 +1223,27 @@ nav a[href="prices.html"]:focus {
 .price-card strong,
 .price-card li {
   color: #5b3524 !important;
+}
+@media (max-width: 700px) {
+  .prices-grid,
+  .price-list,
+  .prices-cards {
+    width: calc(100% - 30px) !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .prices-title {
+    width: calc(100% - 30px);
+    gap: 15px;
+  }
+
+  .prices-title h1 {
+    font-size: 30px;
+  }
+
+  .prices-logo {
+    width: 75px !important;
+    height: 75px !important;
+    margin-left: 0;
+  }
 }
