@@ -1114,3 +1114,10 @@ header a.button.price-button {
 .price-link:hover {
   color: #0b6d8f;
 }
+nav a[href="prices.html"],
+nav a[href="prices.html"]:visited,
+nav a[href="prices.html"]:hover,
+nav a[href="prices.html"]:focus {
+  color: #123f59;
+  text-decoration: none;
+}
