@@ -1098,3 +1098,19 @@ header a.button.price-button {
   box-shadow: none !important;
   font: inherit !important;
 }
+.price-link,
+.price-link:visited,
+.price-link:hover,
+.price-link:focus,
+.price-link:active {
+  color: #123f59;
+  background: transparent;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.price-link:hover {
+  color: #0b6d8f;
+}
