@@ -1103,6 +1103,9 @@ header a.button.price-button {
 .price-link:hover,
 .price-link:focus,
 .price-link:active {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
   color: #123f59;
   background: transparent;
   text-decoration: none;
@@ -1120,4 +1123,10 @@ nav a[href="prices.html"]:hover,
 nav a[href="prices.html"]:focus {
   color: #123f59;
   text-decoration: none;
+}
+.price-link {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
 }
