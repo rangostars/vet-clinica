@@ -1207,3 +1207,8 @@ nav a[href="prices.html"]:focus {
   max-width: none;
   box-sizing: border-box;
 }
+.price-card {
+  border: 2px solid #8ed8e8 !important;
+  border-radius: 18px;
+  background: #ffffff;
+}
