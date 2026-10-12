@@ -1396,10 +1396,6 @@ nav a[href="prices.html"]:focus {
     grid-template-columns: 1fr;
   }
 }
-.extra-prices {
-  width: min(100% - 60px, 1100px);
-  margin: 60px auto 0;
-}
 
 .extra-prices-grid {
   display: grid !important;
