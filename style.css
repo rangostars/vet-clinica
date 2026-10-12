@@ -1381,3 +1381,4 @@ nav a[href="prices.html"]:focus {
 .price-help-button:hover {
   background: #0b6d8f;
 }
+grid-template-columns: repeat(3, 1fr);
