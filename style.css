@@ -190,7 +190,6 @@ h3 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 
@@ -406,7 +405,6 @@ h3 {
 }
 .prices-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
