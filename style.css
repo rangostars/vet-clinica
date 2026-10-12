@@ -1399,3 +1399,32 @@ grid-template-columns: repeat(3, 1fr);
     grid-template-columns: 1fr;
   }
 }
+.extra-prices {
+  width: min(100% - 60px, 1100px);
+  margin: 60px auto 0;
+}
+
+.extra-prices-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.extra-prices-grid .price-card {
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 1000px) {
+  .extra-prices-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .extra-prices-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
