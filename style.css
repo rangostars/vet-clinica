@@ -382,10 +382,6 @@ h3 {
     margin-left: auto;
   }
 }
-  .price-card {
-    padding: 16px;
-  }
-}
 .gallery {
   margin-top: 56px;
   overflow: hidden;
@@ -1366,4 +1362,9 @@ nav a[href="prices.html"]:focus {
   .extra-prices-grid {
     grid-template-columns: 1fr !important;
   }
+}
+.extra-prices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
