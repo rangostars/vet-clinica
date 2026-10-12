@@ -1341,3 +1341,43 @@ nav a[href="prices.html"]:focus {
     grid-template-columns: 1fr !important;
   }
 }
+.price-help {
+  width: min(100% - 60px, 800px);
+  margin: 50px auto 0;
+  padding: 35px 40px;
+  border: 2px solid #8ed8e8;
+  border-radius: 18px;
+  background: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.price-help h2 {
+  margin: 0 0 12px;
+  color: #5b3524;
+  font-size: 28px;
+}
+
+.price-help p {
+  margin: 0 0 25px;
+  color: #5b3524;
+  font-size: 18px;
+}
+
+.price-help a {
+  color: #5b3524;
+}
+
+.price-help-button {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: #159fca;
+  color: #ffffff !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.price-help-button:hover {
+  background: #0b6d8f;
+}
