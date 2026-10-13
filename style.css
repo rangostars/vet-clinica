@@ -1174,3 +1174,32 @@ h3 {
   font-size: 2rem;
   color: #1c3a4a;
 }
+/* Сетка карточек цен: 3 колонки, ровные отступы */
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/* Сами карточки: ровно заполняют клетку */
+.prices-grid > * {
+  text-align: center;
+  padding: 24px 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(23, 97, 123, 0.08);
+}
+
+/* На средних экранах — 2 колонки, на телефонах — 1 */
+@media (max-width: 900px) {
+  .prices-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .prices-grid {
+    grid-template-columns: 1fr;
+  }
+}
