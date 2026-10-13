@@ -1288,8 +1288,8 @@ h3 {
 
 /* Круг с собакой */
 .prices-logo {
-  width: 160px;
-  height: 160px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
