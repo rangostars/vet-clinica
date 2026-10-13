@@ -1057,3 +1057,74 @@ h3 {
     font-size: 1.1rem;
   }
 }
+/* Шапка: всё по одной линии */
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Логотип не сжимается */
+.header-logo,
+.header-inner > a img {
+  flex-shrink: 0;
+}
+
+/* Телефон */
+.header-phone {
+  flex-shrink: 0;
+  color: #123f59;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header-phone:hover {
+  color: #0b6d8f;
+}
+
+/* Адрес: больше не прыгает вправо, читается в две строки */
+.header-address {
+  margin-left: 0;
+  color: #5f5148;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  max-width: 220px;
+  text-align: left;
+}
+
+/* Меню — прижимается к правому краю и держит одну строку */
+.main-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1000px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .header-phone {
+    margin-left: auto;
+  }
+
+  .main-nav {
+    margin-left: 0;
+    order: 4;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-address {
+    order: 3;
+    width: 100%;
+    text-align: left;
+  }
+}
