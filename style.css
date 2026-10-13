@@ -1274,13 +1274,13 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 32px;
   margin: 48px auto 40px;
 }
 
 /* Заголовок: увеличенный, тёмный */
 .prices-title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #1c3a4a;
   margin: 0;
