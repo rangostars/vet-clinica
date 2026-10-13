@@ -1378,3 +1378,9 @@ h3 {
 .price-help a:hover {
   text-decoration: underline;
 }
+/* Карточка «Не нашли нужную услугу?» растягивается на всю строку сетки */
+.prices-cards .price-help,
+.extra-prices-grid .price-help,
+.prices-grid .price-help {
+  grid-column: 1 / -1;
+}
