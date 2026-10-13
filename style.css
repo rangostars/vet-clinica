@@ -1353,7 +1353,7 @@ h3 {
   background: #eef4ff;
   border-radius: 20px;
   padding: 32px 36px;
-  max-width: 1000px;
+  width: min(1120px, calc(100% - 40px));
   margin: 40px auto;
 }
 
