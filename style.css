@@ -1384,3 +1384,7 @@ h3 {
 .prices-grid .price-help {
   grid-column: 1 / -1;
 }
+.price-card-featured {
+  border: 2px solid #cfe4f0;
+  background: #ffffff;
+}
