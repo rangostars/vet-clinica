@@ -1269,3 +1269,48 @@ h3 {
 .price-item small {
   color: #8a6a4f;   /* чуть светлее для "/ час" */
 }
+/* Обёртка: заголовок и собака в одну строку, по центру */
+.prices-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 48px auto 40px;
+}
+
+/* Заголовок: увеличенный, тёмный */
+.prices-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1c3a4a;
+  margin: 0;
+}
+
+/* Круг с собакой */
+.prices-logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #d8f0f7;
+}
+
+/* Сама картинка внутри круга */
+.prices-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .prices-head {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .prices-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
