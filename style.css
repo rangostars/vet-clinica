@@ -1146,3 +1146,31 @@ h3 {
     text-align: center;
   }
 }
+/* Логотип-собака на странице цен — такие же размеры, как на главной */
+.prices-logo,
+.page-logo {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #d8f0f7;
+}
+
+.prices-logo img,
+.page-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Заголовок «Стоимость услуг» по центру страницы */
+.prices-title {
+  margin: 40px auto 32px;
+  max-width: 720px;
+  text-align: center;
+  font-size: 2rem;
+  color: #1c3a4a;
+}
