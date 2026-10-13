@@ -1203,3 +1203,65 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+/* Сетка шести карточек цен: 3 колонки */
+.prices-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 32px auto 0;
+  width: min(1120px, calc(100% - 40px));
+}
+
+/* Секция допуслуг растягивается на всю строку */
+.prices-cards .extra-prices {
+  grid-column: 1 / -1;
+}
+
+/* Сетка внутри секции допуслуг: 3 колонки */
+.extra-prices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Сама карточка */
+.price-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 22px;
+  box-shadow: 0 6px 20px rgba(23, 97, 123, 0.08);
+}
+
+/* Строка «услуга — цена» */
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaf3f6;
+}
+
+.price-item:last-child {
+  border-bottom: none;
+}
+
+/* Акцентная карточка */
+.price-card-featured {
+  background: #e6f6fb;
+  border: 2px solid #76c9e8;
+}
+
+@media (max-width: 900px) {
+  .prices-cards,
+  .extra-prices-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .prices-cards,
+  .extra-prices-grid {
+    grid-template-columns: 1fr;
+  }
+}
