@@ -1314,3 +1314,34 @@ h3 {
     text-align: center;
   }
 }
+.prices-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 48px auto 40px;
+  width: min(1000px, calc(100% - 40px));
+}
+
+.prices-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1c3a4a;
+  margin: 0;
+  text-align: center;
+}
+
+.prices-logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.prices-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
