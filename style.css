@@ -744,10 +744,6 @@ h3 {
   font-weight: 400;
 }
 
-.price-card-featured {
-  border: 2px solid #c8895d;
-}
-
 .price-label,
 .price-bonus-label {
   display: inline-block;
@@ -1264,4 +1260,12 @@ h3 {
   .extra-prices-grid {
     grid-template-columns: 1fr;
   }
+}
+.price-card strong,
+.price-item strong {
+  color: #5a3318;   /* тёмно-коричневый */
+}
+
+.price-item small {
+  color: #8a6a4f;   /* чуть светлее для "/ час" */
 }
