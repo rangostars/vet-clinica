@@ -1345,3 +1345,7 @@ h3 {
   object-fit: cover;
   display: block;
 }
+.price-card-featured {
+  background: #ffffff;
+  border: 1px solid #e3ecef;
+}
