@@ -1349,3 +1349,32 @@ h3 {
   background: #ffffff;
   border: 1px solid #e3ecef;
 }
+.price-help {
+  background: #eef4ff;
+  border-radius: 20px;
+  padding: 32px 36px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.price-help h2 {
+  font-size: 1.9rem;
+  color: #1c3a4a;
+  margin: 0 0 12px;
+}
+
+.price-help p {
+  font-size: 1rem;
+  color: #33475c;
+  margin: 0;
+}
+
+.price-help a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.price-help a:hover {
+  text-decoration: underline;
+}
