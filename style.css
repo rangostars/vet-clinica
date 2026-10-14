@@ -1388,3 +1388,6 @@ h3 {
   border: 2px solid #a0522d;
   background: #ffffff;
 }
+html {
+  cursor: url("paw.png") 8 8, auto;
+}
