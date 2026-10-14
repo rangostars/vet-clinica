@@ -1391,3 +1391,8 @@ h3 {
 html {
   cursor: url("paw.png") 8 8, auto;
 }
+.nav-link {
+  display: inline-block;
+  color: #555;
+  transition: all 0.2s ease;
+}
