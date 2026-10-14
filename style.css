@@ -1394,5 +1394,10 @@ html {
 .nav-link {
   display: inline-block;
   color: #555;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: orange;              /* оранжевый */
+  transform: translateY(-4px);/* приподняли */
 }
