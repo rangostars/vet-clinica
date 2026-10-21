@@ -1611,3 +1611,141 @@ h3 {
     font-size: 1rem;
   }
 }
+/* ═══════════ МОБИЛЬНАЯ ШАПКА С БУРГЕРОМ ═══════════ */
+
+/* Кнопка-бургер (по умолчанию скрыта — только на мобилке) */
+.burger-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: #ecf6fa;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.burger-toggle span {
+  display: block;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  border-radius: 2px;
+  background: #17617b;
+  transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+}
+
+.burger-toggle span:nth-child(1) { top: 13px; }
+.burger-toggle span:nth-child(2) { top: 20px; }
+.burger-toggle span:nth-child(3) { top: 27px; }
+
+/* Открытое состояние бургера — крестик */
+.burger-toggle.is-open span:nth-child(1) {
+  top: 20px;
+  transform: rotate(45deg);
+}
+.burger-toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+.burger-toggle.is-open span:nth-child(3) {
+  top: 20px;
+  transform: rotate(-45deg);
+}
+
+/* ───────── Мобильная версия ≤ 700px ───────── */
+@media (max-width: 700px) {
+
+  /* Верхняя строка: логотип + телефон + бургер */
+  .header-inner {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas: "logo phone burger";
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 0;
+    padding: 10px 0;
+  }
+
+  .header-logo,
+  .logo {
+    grid-area: logo;
+    justify-self: start;
+    font-size: 1.05rem;
+  }
+
+  .header-phone {
+    grid-area: phone;
+    justify-self: end;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .burger-toggle {
+    display: block;
+    grid-area: burger;
+  }
+
+  /* Скрытая панель — всё остальное */
+  .header-address,
+  .main-nav {
+    display: none;
+    grid-area: auto;
+  }
+
+  /* Когда бургер открыт — показываем и выстраиваем в столбик */
+  .header-inner.burger-open .header-address {
+    display: block;
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 8px 0 0;
+    max-width: none;
+    padding-top: 10px;
+    border-top: 1px solid #e6eef3;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .header-inner.burger-open .main-nav {
+    display: flex;
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 6px;
+  }
+
+  .header-inner.burger-open .main-nav a {
+    display: block;
+    padding: 11px 6px;
+    border-top: 1px solid #eef4f7;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .header-inner.burger-open .main-nav .account-button {
+    margin-top: 8px;
+    padding: 10px 18px;
+    border-top: 0;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
+
+/* Совсем узкие экраны — телефон ещё чуть меньше */
+@media (max-width: 420px) {
+  .header-phone {
+    font-size: 0.82rem;
+  }
+  .header-logo,
+  .logo {
+    font-size: 1rem;
+  }
+}
