@@ -10,8 +10,8 @@
 </head>
 <body>
 
- <header class="site-header">
-  <div class="container header-inner">
+<header class="site-header">
+  <div class="container header-inner" id="headerInner">
 
     <a class="logo" href="index.html">
       🐾 Пёс&Пёс
@@ -21,24 +21,37 @@
       +7 (960) 260-02-69
     </a>
 
-<a
-  class="header-address"
-  href="https://yandex.ru/maps/?text=гп.%20Новоселье,%20ул.%20Красносельское%20шоссе,%2016"
-  target="_blank"
-  rel="noopener"
->
-  гп. Новоселье, ул. Красносельское шоссе, 16
-</a>
+    <button
+      class="burger-toggle"
+      type="button"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      aria-controls="headerInner"
+      id="burgerToggle"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a
+      class="header-address"
+      href="https://yandex.ru/maps/?text=гп.%20Новоселье,%20ул.%20Красносельское%20шоссе,%2016"
+      target="_blank"
+      rel="noopener"
+    >
+      гп. Новоселье, ул. Красносельское шоссе, 16
+    </a>
 
     <nav class="main-nav">
-  <a href="#about">О клинике</a>
-  <a href="#services">Услуги</a>
-  <a href="#doctors">Врачи</a>
-  <a href="#reviews">Отзывы</a>
-  <a href="#contacts">Контакты</a>
-  <a class="price-link" href="prices.html">Цены</a>
-  <a class="account-button" href="https://rangostars.github.io/adminka/">Личный кабинет</a>
-</nav>
+      <a href="index.html#about">О клинике</a>
+      <a href="index.html#services">Услуги</a>
+      <a href="index.html#doctors">Врачи</a>
+      <a href="index.html#reviews">Отзывы</a>
+      <a href="index.html#contacts">Контакты</a>
+      <a href="prices.html">Цены</a>
+      <a class="account-button" href="https://rangostars.github.io/adminka/">Личный кабинет</a>
+    </nav>
 
   </div>
 </header>
