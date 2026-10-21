@@ -1401,3 +1401,31 @@ html {
   color: orange;              /* оранжевый */
   transform: translateY(-4px);/* приподняли */
 }
+/* Кнопка «Личный кабинет» в меню */
+.main-nav .account-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.main-nav .account-button:hover {
+  background: #dc7e36;
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Мобильная версия */
+@media (max-width: 760px) {
+  .main-nav .account-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
