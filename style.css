@@ -1434,7 +1434,7 @@ html {
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 70vh;   /* ← подберите 60–80vh */
+  /* min-height: 70vh;  ← УДАЛИТЬ */
 }
 
 .hero-video {
@@ -1455,8 +1455,9 @@ html {
 .hero-video__player {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;    /* ← было cover */
   display: block;
+  background: #000;       /* чёрные полосы по краям будут чёрными */
 }
 
 .hero-video__skip {
