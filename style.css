@@ -1796,3 +1796,13 @@ h3 {
     font-size: 1rem;
   }
 }
+/* ─── Отступ при переходе к якорю ─── */
+[id] {
+  scroll-margin-top: 70px;
+}
+
+@media (max-width: 700px) {
+  [id] {
+    scroll-margin-top: 60px;
+  }
+}
