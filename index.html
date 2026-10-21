@@ -41,32 +41,51 @@
   </div>
 </header>
 
-  <main>
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <p class="eyebrow">Центр ветеринарной реабилитации собак</p>
+    <main>
+    <!-- ───────── Стартовое видео ───────── -->
+    <div class="intro-video" id="introVideo">
+      <video
+        class="intro-video__player"
+        id="introVideoPlayer"
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+      >
+        <source src="video/intro.mp4" type="video/mp4">
+      </video>
 
-        <h1>Пёс&Пёс — чтобы жить на все 100%</h1>
-
-        <p class="hero-description">
-          Реабилитируем, сохраняем, восстанавливаем и поддерживаем
-          здоровье и активность собак.
-        </p>
-
-        <a class="button" href="#contacts">
-          Записаться на консультацию
-        </a>
-      </div>
-
-      <div class="hero-logo">
-        <img
-          src="logo-pes-pes.jpg"
-          alt="Логотип центра Пёс&Пёс"
-        >
-      </div>
+      <button class="intro-video__skip" type="button" id="introSkip">
+        Пропустить →
+      </button>
     </div>
-  </section>
+
+    <!-- ───────── Главный блок ───────── -->
+    <section id="home" class="hero hero--hidden">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Центр ветеринарной реабилитации собак</p>
+
+          <h1>Пёс&Пёс — чтобы жить на все 100%</h1>
+
+          <p class="hero-description">
+            Реабилитируем, сохраняем, восстанавливаем и поддерживаем
+            здоровье и активность собак.
+          </p>
+
+          <a class="button" href="#contacts">
+            Записаться на консультацию
+          </a>
+        </div>
+
+        <div class="hero-logo">
+          <img
+            src="logo-pes-pes.jpg"
+            alt="Логотип центра Пёс&Пёс"
+          >
+        </div>
+      </div>
+    </section>
 
 <section class="section">
   <div class="container">
